@@ -1,7 +1,14 @@
+import BaseLayout from 'components/layouts/BaseLayout';
+import { NextSeo } from 'next-seo';
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
-  return <h1 className="underline">Hello world, this is Tailwind CSS</h1>;
+  return (
+    <>
+      <NextSeo title="SEO Title" description="This is SEO Descrioption tag" />
+      <BaseLayout />
+    </>
+  );
 };
 
 export default Home;
